@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: purple;
+    }
+
+    .login-form {
+      width: 350px;
+      padding: 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .login-form h2 {
+      margin: 0 0 25px;
+      color: purple;
+      text-align: center;
+    }
+
+    .login-form label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: bold;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .login-form button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      color: white;
+      background-color: purple;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .login-form button:hover {
+      background-color: #5e006f;
+    }
+  </style>
+</head>
+
+<body>
+  <form class="login-form">
+    <h2>Login</h2>
+
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email"
+      required
+    >
+
+    <label for="password">Password</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      placeholder="Enter your password"
+      required
+    >
+
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>
