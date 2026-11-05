@@ -1,0 +1,24 @@
+import { useState } from 'react';
+
+export default function App() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  return (
+    <main>
+      <h1>Show or Hide Text</h1>
+
+      <button
+        type="button"
+        onClick={() => setIsVisible((visible) => !visible)}
+        aria-expanded={isVisible}
+        aria-controls="message"
+      >
+        {isVisible ? 'Hide Text' : 'Show Text'}
+      </button>
+
+      <p id="message" hidden={!isVisible}>
+        Hello! Click the button again to hide this text.
+      </p>
+    </main>
+  );
+}
